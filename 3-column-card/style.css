@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: aquamarine;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Outfit, sans-serif;
+}
+
+.wrapper {
+  display:flex;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 307px;
+  height: 500px;
+  padding: 48px;
+  box-sizing: border-box;
+}
+
+.title {
+  color: #F2F2F2;
+  font-size: 40px;
+  font-family: Big Shoulders Display;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 35px 0 25px 0;
+  margin: 0;
+}
+
+.button {
+  border: 3px solid #FFF;
+  width: 146px;
+  border-radius: 25px;
+  color: #F2F2F2;
+  padding: 12px 31px;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #F2F2F2 !important;
+  border: 3px solid #FFF;
+}
+
+.description {
+  color: #FFF;
+  font-size: 15px;
+  font-family: Lexend Deca;
+  line-height: 25px;
+  opacity: 0.75;
+}
+
+.icon {
+  width: 64px;
+}
+
+.spacer {
+  height: 100%
+}
+
+.first-card {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.last-card {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.text-yellow {
+  color: #E28625;
+}
+
+.text-blue {
+  color: #006971;
+}
+
+.text-green {
+  color: #004140;
+}
+.bg-yellow {
+  background-color: #E28625;
+}
+
+.bg-blue {
+  background-color: #006971;
+}
+
+.bg-green {
+  background-color: #004140;
+}
+
+@media (max-width: 1000px) {
+  body {
+    height: 100%;
+    overflow: scroll;
+  }
+  .wrapper {
+    flex-direction: column;
+    margin: 88px 0;
+  }
+  .footer {
+    position: relative;
+  }
+
+  .first-card {
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .last-card {
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .card {
+    height: 442px;
+  }
+}
